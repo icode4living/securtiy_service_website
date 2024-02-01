@@ -1,0 +1,97 @@
+//define colors
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@300&family=Yantramanav:wght@300&display=swap');
+
+$primary_color:#16334b;
+$secondary_color:#ffb703;
+$body_color: #eee;
+//fonts
+$header-font: 'Oswald', sans-serif;
+$body-font:'Poppins', sans-serif;
+*{box-sizing: border-box;}
+body,html{
+    margin: 0;
+    font-family: $body-font;
+    background-color: $body_color;
+    height: 100%;
+}
+.link-item{
+    list-style: none;
+    display: inline-block;
+   // padding: 16px 12px;
+font-family: $header-font;
+justify-self: center;
+a{
+    text-decoration: none;
+color:$primary_color;
+   padding: 18px 16px;
+
+
+}
+}
+.logo{
+    padding: 16px 12px;
+
+}
+header{
+    padding: 8px;
+    height: 100px;
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: #fff;
+  z-index: 1;
+  overflow: hidden;
+}
+.nav-top{
+    display: flex;
+    margin-left: 100px;
+}
+.hero{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    background-image: linear-gradient( to right , rgba(255,255,255,1), rgba(255,255,255,0.1)), url("../img/24311.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+.hero-text{
+    position: absolute;
+    top:40%;
+    left:5%;
+    flex-wrap: wrap;
+    padding: 8px;
+    max-width: 600px;
+    p{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    h1{
+        font-family: $header-font;
+        margin: 0;
+        font-size: 4rem;
+    }
+    p{
+        line-height: 32px;
+        color: #303030;
+
+    }
+}
+.label-text{
+    background-color: $primary_color;
+    color: #fff;
+    padding: 8px;
+    font-family: $header-font;
+    text-transform: uppercase;
+}
+.contact-link{
+    text-decoration: none;
+    color: #fff;
+    background-color: $primary_color;
+    padding: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-size: 24px;
+}
