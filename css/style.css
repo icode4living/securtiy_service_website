@@ -296,20 +296,28 @@ header {
   text-align: center;
   color: white;
   margin: 0 auto;
-  border-bottom: 1px solid #fff;
   max-width: 600px;
 }
 .cta h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-family: "Oswald", sans-serif;
   margin: 0;
+}
+.cta p {
+  border-bottom: 1px solid #fff;
+  padding: 16px;
+  font-size: 18px;
 }
 
 .cta-link {
   margin: 0 auto;
   display: inline-block;
-  text-align: center;
+  overflow: hidden;
+  /* span:hover{
+       background-color: #fff;
+       color:#004e9c;
+   }*/
 }
 .cta-link a {
   text-decoration: none;
@@ -322,16 +330,70 @@ header {
   padding: 8px;
   background-color: transparent;
 }
-.cta-link span.i:hover {
-  background-color: #fff;
-  color: #004e9c;
-}
 
 .whatsapp-link {
   text-decoration: none;
   color: #fff;
   background-color: #004e9c;
   padding: 12px;
+}
+
+.section-2 {
+  background-color: #eee;
+  overflow: hidden;
+}
+
+.section-content {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.section-content {
+  margin-top: 100px;
+}
+
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+}
+
+.--title {
+  color: #004e9c;
+  position: relative;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+}
+
+.--title::after {
+  position: absolute;
+  content: " ";
+  width: 30px;
+  position: absolute;
+  top: 15px;
+  height: 2px;
+  right: -35px;
+  background-color: #004e9c;
+}
+
+.title-right h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.relative-card {
+  position: relative;
+}
+
+.left-img {
+  background-color: #004e9c;
+  position: absolute;
+  border-radius: 50%;
+  padding: 8px;
+  right: 10px;
+  top: -30px;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
