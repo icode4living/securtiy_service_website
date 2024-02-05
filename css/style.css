@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@300&family=Yantramanav:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -8,6 +9,7 @@ body, html {
   font-family: "Poppins", sans-serif;
   background-color: #fff;
   height: 100%;
+  overflow-x: hidden;
 }
 
 .link-item {
@@ -127,12 +129,12 @@ header {
 }
 
 .about-text {
-  max-width: 600px;
+  width: 600px;
   margin-left: 100px;
 }
 .about-text h1 {
   font-family: "Oswald", sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   margin: 0;
 }
 .about-text p {
@@ -257,7 +259,8 @@ header {
   background-color: white;
   padding: 8px;
   box-shadow: 1px 2px 1px rgba(255, 255, 255, 0.5);
-  max-height: 300px;
+  height: fit-content;
+  margin-top: 10px;
 }
 
 .round-border {
@@ -275,9 +278,17 @@ header {
 }
 .content h3 {
   text-align: center;
+  font-family: "Oswald", sans-serif;
 }
 .content p {
   color: #303030;
+}
+.content h1 {
+  font-family: "Rubik Scribble", system-ui;
+  text-align: center;
+  font-size: 5rem;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 .quote {
@@ -350,6 +361,7 @@ header {
 
 .section-content {
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .section-grid {
@@ -394,6 +406,271 @@ header {
   right: 10px;
   top: -30px;
   overflow: hidden;
+}
+
+.contact-section {
+  display: flex;
+  max-height: 400px;
+}
+
+.contact-img {
+  width: 40%;
+}
+.contact-img img {
+  width: 100%;
+  height: 400px;
+}
+
+.contact-details {
+  background-color: #16334b;
+  width: 60%;
+  text-align: center;
+  color: white;
+  padding: 12px;
+}
+.contact-details h2 {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 3rem;
+}
+.contact-details p {
+  color: white;
+  font-size: 24px;
+}
+.contact-details a {
+  text-decoration: none;
+  color: #fff;
+}
+.contact-details li {
+  display: inline-block;
+  padding: 8px 10px;
+}
+
+.fa-whatsapp {
+  border-radius: 50%;
+  font-size: 24px;
+  background-color: #128c7e;
+  color: #fff;
+  padding: 12px;
+}
+
+.fa-whatsapp:hover {
+  padding: 8;
+  transition: padding 0.4 ease;
+}
+
+.fa-phone-volume {
+  background-color: #34b7f1;
+  color: #fff;
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.fa-phone-volume:hover {
+  padding: 8;
+  transition: padding 0.4 ease;
+  padding: 12px;
+}
+
+.p-card {
+  background-color: #fff;
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.4);
+  height: fit-content;
+}
+
+.profile-img {
+  width: 100%;
+  height: 350px;
+}
+
+.profile-list {
+  text-align: center;
+}
+.profile-list h4 {
+  margin: 0;
+}
+.profile-list li {
+  display: block;
+  color: #004e9c;
+}
+
+footer {
+  background-color: #16334b;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.footer-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.footer-nav {
+  text-align: justify;
+}
+.footer-nav i {
+  padding: 4px;
+}
+.footer-nav h3 {
+  font-family: "Oswald", sans-serif;
+  color: #eee;
+  text-align: center;
+}
+.footer-nav li {
+  list-style: none;
+  padding: 8px 10px;
+  color: #eee;
+}
+.footer-nav a {
+  text-decoration: none;
+  color: #eee;
+}
+
+.copyright {
+  text-align: center;
+  width: 100%;
+  padding: 4px;
+  background-color: #004e9c;
+}
+.copyright p {
+  color: #eee;
+}
+
+/**
+Mobile Screen
+*/
+@media (max-width: 800px) {
+  .main > * {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  .nav-link {
+    display: none;
+  }
+  .hero {
+    height: 70%;
+    display: block;
+  }
+  .hero-text {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .hero-text p {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .hero-text h1 {
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  .hero-text p {
+    line-height: 32px;
+    color: #303030;
+  }
+  .about {
+    display: block;
+  }
+  .img-section {
+    position: relative;
+    width: 100%;
+  }
+  .about-text {
+    width: 100%;
+    margin-left: 0;
+  }
+  .about-text h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  .about-text p {
+    color: #303030;
+    line-height: 32px;
+  }
+  .grid {
+    display: block;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .card {
+    width: 100%;
+    margin-top: 10px;
+    height: fit-content;
+    min-height: fit-content;
+  }
+  .section-content {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .section-content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .section-grid {
+    display: block;
+  }
+  .contact-section {
+    display: block;
+    max-height: fit-content;
+    height: fit-content;
+  }
+  .contact-img {
+    width: 100%;
+    height: fit-content;
+  }
+  .contact-img img {
+    width: 100%;
+    height: 400px;
+  }
+  .contact-details {
+    background-color: #16334b;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 12px;
+  }
+  .contact-details h2 {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 2rem;
+  }
+  .contact-details p {
+    color: white;
+    font-size: 18px;
+  }
+  .contact-details a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .contact-details li {
+    display: inline-block;
+    padding: 8px 10px;
+  }
+  footer {
+    overflow: hidden;
+  }
+  .footer-items {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .footer-nav {
+    text-align: justify !important;
+  }
+  .footer-nav h3 {
+    text-align: justify;
+    padding-left: 24px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
