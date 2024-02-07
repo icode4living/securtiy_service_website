@@ -6,6 +6,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
 crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="./css/style.css" type="text/css">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<title>Toboros</title>
+
 </head>
 <body>
     
@@ -24,14 +27,35 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 </div>
 </header>
 <div class="hero">
-    <div class="hero-text">
+    <div class="hero-text fade">
         <span class="label-text"><small>SECURE YOUR HOME &amp; OFFICE</small></span>
 <h1>CCTV SECURITY &amp; INSTALLATION</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
     ipsum dolor sit amet Lorem
 </p>
 <a class="contact-link">Contact us</a>
+
     </div>
+    <!--<div class="hero-text fade">
+        <span class="label-text"><small>SECURE YOUR HOME &amp; OFFICE</small></span>
+<h1>CCTV SECURITY &amp; INSTALLATION</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    ipsum dolor sit amet Lorem
+</p>
+<a class="contact-link">Contact us</a>
+
+    </div>
+    <div class="hero-text fade">
+        <span class="label-text"><small>SECURE YOUR HOME &amp; OFFICE</small></span>
+<h1>SECURITY &amp; SYSTEM</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    ipsum dolor sit amet Lorem
+</p>
+<a class="contact-link">Contact us</a>
+
+    </div>-->
+    <a id="prev"><i class="fa-solid fa-angle-left"></i></a>
+    <a id="next"><i class="fa-solid fa-chevron-right"></i></a>
 </div>
 
 <!---Main-->
@@ -148,6 +172,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
         <img src="./img/cctv-50.png" alt="..">
     </div>
     <article class="content">
+        <h1>01</h1>
         <h3>CCTV servicing &amp; installation</h3>
         <p>Lorem ipsum dolor sit amet, consectetur 
             adipisicing elit</p>
@@ -159,6 +184,8 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
         <img src="./img/cctv-50.png" alt="..">
     </div>
     <article class="content">
+        <h1>02</h1>
+
         <h3>CCTV servicing &amp; installation</h3>
         <p>Lorem ipsum dolor sit amet, consectetur 
             adipisicing elit</p>
@@ -170,6 +197,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
         <img src="./img/cctv-50.png" alt="..">
     </div>
     <article class="content">
+        <h1>03</h1>
         <h3>CCTV servicing &amp; installation</h3>
         <p>Lorem ipsum dolor sit amet, consectetur 
             adipisicing elit</p>
@@ -182,7 +210,98 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </div>
 <div class="contact-section">
+<div class="contact-img">
+<img src="./img/customer-care.jpg" alt="..">
+</div>
+<div class="contact-details">
+    <article class="contact-items">
+        <h2>Contact our 24/7 custormer support</h2>
+        <p>Reach out to us today we are available for
+            all your enquiries.
+        </p>
+<ul>
+    <li><a href="#"><i class="fa-brands fa-whatsapp"></i>0923-44567-888</a></li>
+    <li><a href="#"><i class="fa-solid fa-phone-volume"></i>0923-44567-888</a></li>
+
+</ul>
+    </article>
+</div>
+</div>
 
 </div>
+<div class="team-portfolio">
+        <div class="title-center">
+         <span class="title-label"><small>OUR TEAM</small></span>
+         <h1>Meet Our Management Team</h1>
+        </div>
+        <div class="grid">
+            <div class="p-card">
+                <img  src="./img/manager.jpg" class="profile-img" alt="..">
+                <ul class="profile-list">
+                    <li><h4>John Doe</h4></li>
+                    <li><small>CE0</small></li>
+                </ul>
+            </div>
+<!--profile Card-->
+<div class="p-card">
+    <img  src="./img/manager.jpg" class="profile-img" alt="..">
+    <ul class="profile-list">
+        <li><h4>John Doe</h4></li>
+        <li><small>CE0</small></li>
+    </ul>
+</div>
+<!--profile Card-->
+<div class="p-card">
+    <img  src="./img/manager.jpg" class="profile-img" alt="..">
+    <ul class="profile-list">
+        <li><h4>John Doe</h4></li>
+        <li><small>CE0</small></li>
+    </ul>
+</div>
+     </div>
+<footer>
+    <section class="footer-items">
+        <div class="footer-nav">
+            <h3>Site Maps</h3>
+            <ul>
+                <li><a href="#">&#11162; Home </a></li>
+                <li><a href="#">&#11162; About </a></li>
+                <li><a href="#">&#11162; Contact </a></li>
+                <li><a href="#">&#11162; Blog </a></li>
+            </ul>
+        </div>
+        <div class="footer-nav">
+            <h3>Our Services</h3>
+            <ul>
+                <li>&#11162; CCTV installation</li>
+                <li>&#11162; CCTV installation</li>
+                <li>&#11162; CCTV installation</li>
+                <li>&#11162; CCTV installation</li>
+            </ul>
+        </div>
+        <div class="footer-nav">
+            <h3>Contacts</h3>
+            <ul>
+                <li><i class="fa-solid fa-house"></i>6B, example corner uk</li>
+                <li><i class="fa-solid fa-phone"></i>09036000258</li>
+                <li><i class="fa-solid fa-envelope"></i>info@example.com</li>
+            </ul>
+        </div>
+        <div class="footer-nav">
+            <h3>Social Media</h3>
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="#"><i class="fa-brands fa-square-facebook"></i>Facebook</a></li>
+                <li><a href="#"><i class="fa-brands fa-square-instagram"></i>Instagram</a></li>
+            </ul>
+        </div>
+    </secton>
+</footer> 
+<div class="copyright">
+    <p> &copy; Tobros security InC 2024</p>
+ </div> 
+
 </body>
+<script src="./js/nav-control.js"></script>
+
 </html>
