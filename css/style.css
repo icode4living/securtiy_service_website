@@ -29,7 +29,9 @@ body {
 }
 
 .logo {
-  padding: 16px 12px;
+  height: 100px;
+  width: 200px;
+  padding-bottom: 32px;
 }
 
 header {
@@ -45,7 +47,7 @@ header {
 
 .nav-top {
   display: flex;
-  margin-left: 100px;
+  margin-left: 50px;
 }
 
 .hero {
@@ -66,7 +68,7 @@ header {
   left: 10%;
   flex-wrap: wrap;
   padding: 8px;
-  max-width: 600px;
+  width: 80%;
 }
 .hero-text p {
   font-size: 20px;
@@ -409,8 +411,10 @@ header {
 
 .contact-section {
   display: flex;
-<<<<<<< HEAD
-=======
+}
+
+.contact-section {
+  display: flex;
   max-height: 400px;
 }
 
@@ -886,7 +890,20 @@ tablet screen
   padding: 18px;
   transition: padding 0.1s ease-in;
   cursor: pointer;
->>>>>>> 49def5cc3f3c45ce0d60114556ea9a746b746828
+}
+
+.fade {
+  animation: fade-animation 2s ease;
+  transition: opacity;
+}
+
+@keyframes fade-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

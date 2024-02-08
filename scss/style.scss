@@ -37,8 +37,11 @@ color:$primary_color;
 }
 }
 .logo{
-    padding: 16px 12px;
-
+  // position: absolute;
+    height: 100px;
+    width: 200px;
+    padding-bottom: 32px;
+   
 }
 header{
     padding: 8px;
@@ -52,7 +55,8 @@ header{
 }
 .nav-top{
     display: flex;
-    margin-left: 100px;
+   // display: inline-block;
+    margin-left: 50px;
 }
 
 .hero{
@@ -72,7 +76,7 @@ header{
     left:10%;
     flex-wrap: wrap;
     padding: 8px;
-    max-width: 600px;
+    width: 80%;
     p{
         font-size: 20px;
         font-weight: 300;
@@ -409,11 +413,9 @@ background-color: #004e9c;
     overflow: hidden;
 
 }
-<<<<<<< HEAD
 .contact-section{
     display: flex;
 }
-=======
 
 .contact-section{
     display: flex;
@@ -912,4 +914,16 @@ top: 50%;
     transition: padding 0.1s ease-in;  
     cursor: pointer;
     }
->>>>>>> 49def5cc3f3c45ce0d60114556ea9a746b746828
+.fade{
+animation: fade-animation 2s ease;
+transition: opacity;
+}
+
+@keyframes fade-animation {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: .8;
+    }
+}
