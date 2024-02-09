@@ -16,11 +16,12 @@ body,html{
     font-family: $body-font;
     background-color: #fff;
     height: 100%;
-    //overflow-x: hidden;
-}
-body{
+    width: 100%;
     overflow-x: hidden;
+
+
 }
+
 .link-item{
     list-style: none;
     display: inline-block;
@@ -542,23 +543,128 @@ footer{
         color: #eee;
     }
 }
-
+#menu-btn{
+    display: none;
+}
 /**
 Mobile Screen
 */
-@media (max-width:800px) {
 
+.nav-menu{
+    display: block;
+    width: 100%;
+    background-color: $primary_color;
+    top: 0;
+    height: 50%;
+    left: 0;
+  // overflow: hidden;
+    position: fixed;
+    transition: height 0.3s ease;
+   z-index: 1;
+   margin: 0;
+}
+.mobile-menu-list{
+    list-style: none;
+    display: block;
+    padding: 12px 14px;
+   // border-bottom: 1px solid #eee;
+    a{
+        margin: 0;
+
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 24px;
+    font-family: $header-font;
+
+    }
+}
+#close-btn{
+    display: none;
+    color: #eee;
+    position: absolute;
+    top:10px;
+    right: 10px;
+    border: none;
+    font-size: 24px;
+    background-color: transparent;
+}
+@media only screen and (max-width:800px)  {
+
+//menu button
+#menu-btn{
+    display: block;
+    border: none;
+    background-color: transparent;
+    border: 1px solid #eee;
+    padding: 12px;
+    color: $primary_color;
+    position: absolute;
+    font-size: 24px;
+    right: 15px;
+    top:24px;
+    cursor: pointer;
+}
+    .section-3-title{
+         margin-left: 0px;
+         margin-right: 0px;
+         text-align: center;
+         margin-bottom: 0px;
+     
+     }
+     .section-3-content{
+         margin:0 !important;
+         display: block !important;
+         margin-top: 50px;
+         color: #eeee !important;
+         padding: 24px;
+     
+     }
+     
+     
+     .section-3-text-area{
+        width: 100% !important;
+        flex-wrap: wrap;
+        img{
+            border-radius: 50%;
+            padding: 8px;
+            background-color: #0024f0;
+           height: 50px !important;
+            width: 50px !important;
+    
+        }
+
+     }
+     .form-area{
+        margin-left: 5px;
+     
+         h2{
+             font-family: $header-font;
+             margin: 0;
+             color: #34b7f1;
+             font-size: 2.5rem;
+         }
+     }
+    /*Section-3 ends here**/
     .main > *{
         margin-left: 10px;
         margin-right: 10px;
         margin-top:10px ;
     }
+    .nav-top{
+       // display: flex;
+       // display: inline-block;
+        margin-left: 10px;
+    }
     .nav-link{
         display: none;
     }
     .hero{
-        height: 70%;
+        height: 80%;
         display: block;
+    }
+    .small-img{
+        display: none;
     }
     .hero-text{
         position: absolute;
@@ -569,17 +675,18 @@ Mobile Screen
         p{
             font-size: 18px;
             font-weight: 300;
+            color: #fff;
         }
         h1{
             font-family: $header-font;
             margin: 0;
             font-size: 2.5rem;
         }
-        p{
+      /*  p{
             line-height: 32px;
             color: $text-color;
     
-        }
+        }*/
     }
     .about{
         display: block;
@@ -613,7 +720,9 @@ Mobile Screen
         height: fit-content;
         min-height: fit-content;
     }
-
+.cta{
+    top:20%
+}
     .section-content{
         margin-left: 5px;
         margin-right: 5px;
@@ -714,12 +823,15 @@ color:#fff;
 
 
 }
+#next{
+    right: -2px;
+}
 }
 /**
 tablet screen
 */
-
-@media (max-width:1080px) {
+/*
+@media (min-width:1000px) and (max-width:1080px){
     .main > *{
         margin-left: 10px;
         margin-right: 10px;
@@ -729,9 +841,7 @@ tablet screen
         width: 100%;
         margin-left: 0;
     }
-    body{
-        overflow-x: hidden;
-    }
+  
   
     .nav-link{
         display: none;
@@ -745,23 +855,23 @@ tablet screen
         position: absolute;
         top:40%;
         width: 100%;
-        left:10%;
+        left:5%;
         flex-wrap: wrap;
         text-align: center;
+       // overflow-x: hidden;
         p{
             font-size: 18px;
             font-weight: 300;
+            color: #fff;
+            flex-wrap: wrap;
+
         }
         h1{
             font-family: $header-font;
             margin: 0;
             font-size: 2.5rem;
         }
-        p{
-            line-height: 32px;
-            color: $text-color;
-    
-        }
+      
     }
 .about{
     margin-top: 50px;
@@ -791,14 +901,9 @@ tablet screen
     .big-img{
         height: 500px;
     }
-    .small-img{
-       /* position: absolute;
-        width: 400px;
-        height: 200px;
-        top:-100px;
-        left: -60px;
-        */
+   .small-img{
         display: none;
+   }
     }
 
     .grid{
@@ -887,6 +992,92 @@ margin: 0;
     .profile-img{
         width: 100%;
         height: 250px;
+    }
+    */
+/**Section-3*/
+.section-3{
+    position: relative;
+    height: 100%;
+    background-color: #000000;
+    //overflow: hidden;
+    //z-index: 1;
+    h1{
+        color: #eee !important;
+        font-size: 3.5rem !important;
+        font-family: $header-font;
+        margin-top: 50px !important;
+
+    }
+}
+.section-3-title{
+   
+    text-align: center;
+    margin-bottom: 0;
+
+}
+.section-3-content{
+   margin-left: 100px;
+    margin-right: 100px;
+  display: flex;
+    margin-top: 100px;
+    color: #eeee !important;
+    padding: 24px;
+
+
+}
+.form{
+    background-color: #121212;
+    padding: 12px;
+}
+.form-group{
+    display: block;
+    padding:12px 16px;
+    input{
+       // border:none;
+        border:1px solid #e4dddd;
+        padding: 10px;
+        width: 100%;
+        border-radius: 4px;
+        background-color: #eee;
+
+    }
+    textarea{
+        background-color: #eee;
+        border: none;
+        width: 100%;
+        
+    }
+    button{
+        background-color: #0024f0;
+        color: white;
+        padding: 16px;
+        font-size: 18px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.section-3-text-area{
+   width: 600px;
+    flex-wrap: wrap;
+    img{
+        border-radius: 50%;
+        padding: 12px;
+        background-color: #0024f0;
+       height: 100px;
+        width: 100px;
+
+    }
+}
+.form-area{
+   margin-left: 100px;
+width: 400px;
+    h2{
+        font-family: $header-font;
+        margin: 0;
+        color: #34b7f1;
+        font-size: 2.5rem;
     }
 }
 /**Slide show*/
