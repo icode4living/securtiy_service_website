@@ -1,0 +1,40 @@
+@media (min-width: 768px) and (max-width: 1024px){
+    .hero{
+        height: 50%;
+    }
+    .small-img{
+        display: none;
+    }
+    .img-section{
+    //width: 100%;
+       max-width: 100%;
+    }
+    .quote{
+        height: 60%;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    
+    }
+    .p-card{
+margin-top: 20px;
+    }
+
+    .footer-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+       
+    }
+    .news-grid{
+width: 100%;
+overflow-x: scroll;
+    }
+
+    .form-group{
+        input{
+            width: 100%;
+        }
+    }
+}

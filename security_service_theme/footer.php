@@ -3,10 +3,24 @@
         <div class="footer-nav">
             <h3>Site Maps</h3>
             <ul>
-                <li><a href="#">&#11162; Home </a></li>
+            <li><a href="/">&#11162; Home</a></li>
+        <?php $page = get_pages(array('orderby'=>'name',
+'order'=>'ASC'));
+foreach($pages as $page):
+
+?>
+
+<?php  
+    $page_id = get_cat_ID( $page->name );
+  $page_link = get_category_link( $page_id ); ?>
+    <li><a href="<?php echo esc_url( $page_link ); ?>"
+    title="<?php echo $page->name; ?>">&#11162;<?php echo $page->name; ?></a>
+</li>
+<?php endforeach ?>
+                <!--<li><a href="#">&#11162; Home </a></li>
                 <li><a href="#">&#11162; About </a></li>
                 <li><a href="#">&#11162; Contact </a></li>
-                <li><a href="#">&#11162; Blog </a></li>
+                <li><a href="#">&#11162; Blog </a></li>-->
             </ul>
         </div>
         <div class="footer-nav">
@@ -39,23 +53,21 @@
 <div class="copyright">
     <p> &copy; Tobros security InC 2024</p>
  </div> 
- <script src="./js/nav-control.js"></script>
-<script src="wow.js/dist/WOW.js"></script>
+
+<?php
+$wowsrc = get_stylesheet_directory_uri().'/assets/wow.js/dist/WOW.js';
+//$slide = get_stylesheet_directory_uri().'/assets/js/slide.js';
+?>
+<script src="<?php echo esc_url($wowsrc); ?>"></script>
+<!--<script src="<?php //echo esc_url($slide); ?>"></script>-->
 <script>
     new WOW().init();
 </script>
+
+
 <?php wp_footer(); ?>
 
 </body>
 
 </html>
 
-<?php
-$wowsrc = get_stylesheet_directory_uri().'/assets/donate/wow.js/dist/WOW.js';
-$src = get_stylesheet_directory_uri().'/assets/donate/js/paymaster.js';
-$slide = get_stylesheet_directory_uri().'/assets/donate/js/donate_slide.js';
-?>
-<script src="<?php echo esc_url($wowsrc); ?>"></script>
-<script src="<?php echo esc_url($slide); ?>"></script>
-
-<script type="module" src="<?php echo esc_url($src); ?>"></script>
