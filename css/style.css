@@ -589,6 +589,10 @@ Mobile Screen
 }
 
 @media only screen and (max-width: 800px) {
+  .form-group {
+    width: 400px;
+    padding: 4px !important;
+  }
   /* blog area**/
   .blog-content {
     margin-top: 50px;
@@ -662,7 +666,7 @@ Mobile Screen
     width: 50px !important;
   }
   .form-area {
-    margin-left: 5px;
+    margin: 0 !important;
   }
   .form-area h2 {
     font-family: "Oswald", sans-serif;
@@ -1081,7 +1085,6 @@ margin: 0;
 
 .form-area {
   margin-left: 100px;
-  width: 400px;
 }
 .form-area h2 {
   font-family: "Oswald", sans-serif;
@@ -1203,6 +1206,11 @@ contact page rules
 .blog-content img {
   width: 100%;
   height: 600px;
+}
+
+.news-card img {
+  height: 200px;
+  width: 300px;
 }
 
 /*# sourceMappingURL=style.css.map */
