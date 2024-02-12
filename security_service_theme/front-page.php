@@ -258,7 +258,7 @@ equivalent to ensure constant communication	with our management	team.
     </div>
 </div>
 <div class="service-icon">
-    <img src="./img/icons/24hrs.png">
+    <img src="<?php echo get_theme_file_uri("./assetsimg/icons/24hrs.png")?>">
     <div class="service-text">
 <h3> Round the Clock response to calls</h3>
 <p>	Our	strategy entails several steps to mitigate the 
@@ -271,23 +271,23 @@ equivalent to ensure constant communication	with our management	team.
 <div class="form-area">
 <!--WP form goes here-->
 
-<form class="form">
+<form class="form" id="contact-form">
     <span style="left:50px;" class="title-label"><small>REACH OUT TO US</small></span>
 <h2>Send Us a message</h2>
     <div class="form-group">
     <label>Full Names</label>
-    <input type="text" name="name">
+    <input type="text" name="name" id="name">
 </div>
 <div class="form-group">
     <label>Email</label>
-    <input type="text" name="email">
+    <input type="text" name="email" id="email">
 </div>
 <div class="form-group">
     <label>Phone</label>
-    <input type="text" name="phone">
+    <input type="text" name="phone" id="phone">
 </div>
 <div class="form-group">
-    <textarea rows="5"  placeholder="message here"></textarea>
+    <textarea rows="5"  placeholder="message here" id="message"></textarea>
 </div>
 <div class="form-group">
     <button type="submit">

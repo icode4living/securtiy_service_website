@@ -1,5 +1,5 @@
 <?php
-if ( ! function_exists( 'security_service_theme' ) ) :
+if ( ! function_exists( "security_service_theme") ) :
 /**
  * Sets up theme defaults and registers support for various WordPress  
  * features.
@@ -210,11 +210,10 @@ foreach($contact as $ct){
     global $wpdb;
     $charset_collate = $wpdb->get_charset_collate();
   
-    $sql = "CREATE TABLE IF NOT EXISTS contact_form (
+    $sql = "CREATE TABLE IF NOT EXISTS ucv_contact_form (
       id INT auto_increment,
       email VARCHAR(255) NOT NULL,
       first_name VARCHAR(255) NOT NULL,
-      las_name VARCHAR(255) NOT NULL,
       phone VARCHAR(255) NOT NULL,
       message_text VARCHAR(255) NOT NULL,
       date_created datetime,
@@ -241,7 +240,7 @@ foreach($contact as $ct){
  }
  $email = test_input($_POST(['email']));
 $fname = test_input($_POST(['fname']));
-$lname = test_input($_POST(['lname']));
+//$lname = test_input($_POST(['lname']));
 $phone = test_input($_POST(['phone']));
 $text = test_input($_POST(['message']));
  //save form content
@@ -249,8 +248,8 @@ global $wpdb;
 date_default_timezone_get('Africa/Lagos');
   $now = date('Y-m-d H:i:s');
 //$now->format('Y-m-d H:i:s');
-$wpdb->insert('newsletter',
-array('email'=>$email,'date_created'=>$now,'first_name'=>$fname,'last_name'=>$lname,
+$wpdb->insert('ucv_contact_form',
+array('email'=>$email,'date_created'=>$now,'first_name'=>$fname,
 'phone'=>$phone, 'message_text'=>$text),
 array('%s','%d'));
 
@@ -269,6 +268,3 @@ function test_input($data) {
 endif;
 
 
-
-//endif;
-?>
